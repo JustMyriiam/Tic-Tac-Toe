@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="background">
+        <ul class="square">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>   
+        </ul>
+    </div>
+
+    <h1>Tic Tac Toe</h1>
+
+    <div id="game">
+        <div class="joueur joueur1">
+            <h3>Joueur 1</h3>
+            <img src="./images/player1.png" alt="avatar player1">
+            <div class="score-container">
+                <p>Score : <span id="score1"></span></p>
+            </div>
+        </div>
+
+        <div id="grid">
+            <div id="c1" class="case"></div>
+            <div id="c2" class="case"></div>
+            <div id="c3" class="case"></div>
+            <div id="c4" class="case"></div>
+            <div id="c5" class="case"></div>
+            <div id="c6" class="case"></div>
+            <div id="c7" class="case"></div>
+            <div id="c8" class="case"></div>
+            <div id="c9" class="case"></div>
+        </div>
+
+        <div class="joueur joueur2">
+            <h3>Joueur 2</h3>
+            <img src="./images/player2.png" alt="avatar player2">
+            <div class="score-container">
+                <p>Score : <span id="score2"></span></p>
+            </div>
+        </div>
+    </div>
+    <div id="info">
+        <p id="tour">C'est au tour du Joueur <span id="joueur">1</span></p>
+    </div>
+    <div id="match-nul-container">
+        <p id="match-nul">Match nul : <span id="score-nul" class="match-nul-number"></span></p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2022 Tic Tac Toe. All rights reserved.</p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
